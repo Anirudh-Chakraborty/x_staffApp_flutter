@@ -5,11 +5,7 @@ import '../models/product.dart';
 import '../models/order.dart';
 
 class ApiService {
-  // Change this to your backend URL - use 10.0.2.2 for Android emulator, or your computer's IP for physical device
-  static const String baseUrl = 'http://10.0.2.2:3003';
-
-  // For Android emulator use: 'http://10.0.2.2:3000'
-  // For physical device use your computer's IP: 'http://192.168.x.x:3000'
+  static const String baseUrl = 'https://x-inventory-backend.onrender.com';
 
   Future<User> login(String email, String password) async {
     final response = await http.post(
